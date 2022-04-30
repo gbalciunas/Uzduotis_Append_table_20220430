@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savarankiško bandymas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Append table</h1>
+    <form action="#">
+        <input type="firstName" id="firstName" placeholder="Vardas">
+        <input type="lastName" id="lastName" placeholder="Pavardė">
+        <input type="number" id="age" placeholder="Amžius">
+    </form>
+
+    <div>
+        <button onclick="createRow()">Pridėti</button>
+        <button onclick="removeFirstRow()">Ištrinti pirmą</button>
+        <button onclick="removeLastRow()">Ištrinti paskutinį</button>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>VARDAS</th>
+                <th>PAVARDĖ</th>
+                <th>AMŽIUS</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+            <tr>
+                <td>Jonas cell1</td>
+                <td>Jonaitis cell2</td>
+                <td>65 cell3</td>
+            </tr>
+            <tr>
+                <td>Vardenis cell1</td>
+                <td>Pavardenis cell2</td>
+                <td>22 cell3</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
