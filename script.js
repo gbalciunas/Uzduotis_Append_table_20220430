@@ -4,6 +4,27 @@ var firstName = document.getElementById("firstName")
 var lastName = document.getElementById("lastName")
 var age =document.getElementById("age")
 
+function checkEmptyInput()
+   {
+     var isEmpty = false,
+      firstName = document.getElementById("firstName").value,
+      lastName = document.getElementById("lastName").value,
+      age = document.getElementById("age").value; 
+            
+        if(firstName === ""){
+        alert("Įveskite duomenis");
+      isEmpty = true;
+        }
+        else if(lastName === ""){
+        alert("Įveskite duomenis");
+        isEmpty = true;
+        }
+        else if(age === ""){
+        alert("Įveskite duomenis");
+        isEmpty = true;
+        }
+        return isEmpty;
+    }
 
 
 function removeFirstRow() {
